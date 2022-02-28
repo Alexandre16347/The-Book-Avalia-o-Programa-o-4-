@@ -12,3 +12,4 @@ const Color azulEscuro = Color(0XFF5360d0);
 const Color azulClaro = Color(0XFF5a6cea);
 const Color rosa = Color(0XFFeaa5c4);
 const Color rosaClaro = Color(0XFFfaeff5);
+const Color quaseAzulClaro = Color(0XFFdce3f9);
