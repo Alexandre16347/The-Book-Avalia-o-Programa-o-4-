@@ -35,15 +35,16 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            // ignore: prefer_const_literals_to_create_immutables
                             children: [
-                              Text(
+                              const Text(
                                 'Search',
                                 style: TextStyle(
                                   color: cinza,
                                   fontSize: 40,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 'your book',
                                 style: TextStyle(
                                     color: preto,
@@ -60,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               width: 60,
                               height: 60,
-                              child: Icon(
+                              child: const Icon(
                                 Icons.notifications,
                                 size: 25,
                                 color: azul,
@@ -81,8 +82,8 @@ class _HomePageState extends State<HomePage> {
                               ],
                             )),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 24, left: 37),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 24, left: 37),
                         child: Text(
                           'Popular category',
                           style: TextStyle(
@@ -119,8 +120,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 24, left: 37),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 24, left: 37),
                         child: Text(
                           'Last read',
                           style: TextStyle(
@@ -144,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                                 Container(
                                   height: 180,
                                   width: 175,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(30),
                                       topLeft: Radius.circular(30),
@@ -159,6 +160,7 @@ class _HomePageState extends State<HomePage> {
                                   padding: const EdgeInsets.only(
                                     left: 15,
                                   ),
+                                  // ignore: sized_box_for_whitespace
                                   child: Container(
                                     height: 180,
                                     width: 150,
@@ -167,15 +169,16 @@ class _HomePageState extends State<HomePage> {
                                           CrossAxisAlignment.start,
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
+                                      // ignore: prefer_const_literals_to_create_immutables
                                       children: [
-                                        Text(
+                                        const Text(
                                           'DESING',
                                           style: TextStyle(
                                             fontSize: 16,
                                             color: cinza,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           'My forecourse in the Bauhaus',
                                           style: TextStyle(
                                             fontSize: 20,
@@ -183,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                                             color: preto,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           'by ohannes Itten',
                                           style: TextStyle(
                                             fontSize: 16,
@@ -215,7 +218,7 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.space_dashboard_rounded,
                         color: azul,
                         size: 30,
@@ -224,11 +227,11 @@ class _HomePageState extends State<HomePage> {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => ThreePage(),
+                              builder: (context) => const ThreePage(),
                             ),
                           );
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.remove_red_eye,
                           color: cinza,
                           size: 30,
@@ -238,11 +241,11 @@ class _HomePageState extends State<HomePage> {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => SecondPage(),
+                              builder: (context) => const SecondPage(),
                             ),
                           );
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.person,
                           color: cinza,
                           size: 30,

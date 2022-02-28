@@ -3,15 +3,15 @@
 import 'package:flutter/material.dart';
 import 'package:the_books/cores/cores.dart';
 import 'package:the_books/windows/homepage.dart';
-import 'package:the_books/windows/secondpage.dart';
-import 'package:the_books/windows/threepage.dart';
+// import 'package:the_books/windows/secondpage.dart';
+// import 'package:the_books/windows/threepage.dart';
 
 void main() {
-  runApp(TheBooks());
+  runApp(const TheBooks());
 }
 
 class TheBooks extends StatefulWidget {
-  TheBooks({Key? key}) : super(key: key);
+  const TheBooks({Key? key}) : super(key: key);
 
   @override
   State<TheBooks> createState() => _TheBooksState();
@@ -20,7 +20,7 @@ class TheBooks extends StatefulWidget {
 class _TheBooksState extends State<TheBooks> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(

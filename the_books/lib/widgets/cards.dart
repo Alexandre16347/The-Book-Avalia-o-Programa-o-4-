@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_books/cores/cores.dart';
 
+// ignore: must_be_immutable
 class Cards extends StatelessWidget {
   IconData icone;
   String titulo;
@@ -18,6 +19,7 @@ class Cards extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 35),
+      // ignore: avoid_unnecessary_containers
       child: Container(
         child: Column(
           children: [

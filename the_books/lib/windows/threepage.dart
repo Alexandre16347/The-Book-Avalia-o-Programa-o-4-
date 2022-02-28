@@ -23,13 +23,11 @@ class ThreePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 37, bottom: 20),
-                        child: Container(
-                          child: Icon(
-                            Icons.arrow_back_ios_new_rounded,
-                            size: 20,
-                          ),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 37, bottom: 20),
+                        child: Icon(
+                          Icons.arrow_back_ios_new_rounded,
+                          size: 20,
                         ),
                       ),
                       Row(
@@ -37,15 +35,16 @@ class ThreePage extends StatelessWidget {
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            // ignore: prefer_const_literals_to_create_immutables
                             children: [
-                              Text(
+                              const Text(
                                 'Choose',
                                 style: TextStyle(
                                   color: cinza,
                                   fontSize: 40,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 'your book',
                                 style: TextStyle(
                                     color: preto,
@@ -62,7 +61,7 @@ class ThreePage extends StatelessWidget {
                               ),
                               width: 60,
                               height: 60,
-                              child: Icon(
+                              child: const Icon(
                                 Icons.notifications,
                                 size: 25,
                                 color: azul,
@@ -86,7 +85,7 @@ class ThreePage extends StatelessWidget {
                               Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(30),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                     image: AssetImage('assets/livro.jpg'),
                                     fit: BoxFit.fill,
                                   ),
@@ -94,7 +93,7 @@ class ThreePage extends StatelessWidget {
                                 height: 300,
                                 width: 350,
                               ),
-                              Container(
+                              SizedBox(
                                 height: 200,
                                 width: 350,
                                 child: Padding(
@@ -104,7 +103,7 @@ class ThreePage extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 200,
                                         height: 150,
                                         child: Column(
@@ -112,7 +111,7 @@ class ThreePage extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceEvenly,
-                                          children: [
+                                          children: const [
                                             Text(
                                               'A visual journey around the world',
                                               style: TextStyle(
@@ -139,7 +138,7 @@ class ThreePage extends StatelessWidget {
                                                 BorderRadius.circular(30),
                                             color: azul,
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.arrow_forward_ios_rounded,
                                             color: branco,
                                             size: 30,
@@ -169,7 +168,7 @@ class ThreePage extends StatelessWidget {
                               Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(30),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                     image: AssetImage('assets/livro.jpg'),
                                     fit: BoxFit.fill,
                                   ),
@@ -177,7 +176,7 @@ class ThreePage extends StatelessWidget {
                                 height: 300,
                                 width: 350,
                               ),
-                              Container(
+                              SizedBox(
                                 height: 200,
                                 width: 350,
                                 child: Padding(
@@ -187,7 +186,7 @@ class ThreePage extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         width: 200,
                                         height: 150,
                                         child: Column(
@@ -195,7 +194,7 @@ class ThreePage extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceEvenly,
-                                          children: [
+                                          children: const [
                                             Text(
                                               'A visual journey around the world',
                                               style: TextStyle(
@@ -222,7 +221,7 @@ class ThreePage extends StatelessWidget {
                                                 BorderRadius.circular(30),
                                             color: azul,
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.arrow_forward_ios_rounded,
                                             color: branco,
                                             size: 30,
@@ -257,17 +256,17 @@ class ThreePage extends StatelessWidget {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => HomePage(),
+                              builder: (context) => const HomePage(),
                             ),
                           );
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.space_dashboard_rounded,
                           color: cinza,
                           size: 30,
                         ),
                       ),
-                      Icon(
+                      const Icon(
                         Icons.remove_red_eye,
                         color: azul,
                         size: 30,
@@ -276,11 +275,11 @@ class ThreePage extends StatelessWidget {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => SecondPage(),
+                              builder: (context) => const SecondPage(),
                             ),
                           );
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.person,
                           color: cinza,
                           size: 30,

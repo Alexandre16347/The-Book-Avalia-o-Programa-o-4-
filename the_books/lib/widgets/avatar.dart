@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:the_books/cores/cores.dart';
 
@@ -16,7 +18,7 @@ class Avatar extends StatelessWidget {
         width: 105,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             // stops: [0.01, 0.7],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -32,7 +34,7 @@ class Avatar extends StatelessWidget {
             children: [
               Text(
                 quant,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 25,
                   color: azul,
                   fontWeight: FontWeight.bold,
@@ -40,7 +42,7 @@ class Avatar extends StatelessWidget {
               ),
               Text(
                 texto,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 15,
                   color: azulEscuro,
                 ),

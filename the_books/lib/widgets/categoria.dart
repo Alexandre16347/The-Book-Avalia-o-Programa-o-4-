@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:the_books/cores/cores.dart';
 
+// ignore: must_be_immutable
 class Categoria extends StatelessWidget {
   Color cor;
   String texto;

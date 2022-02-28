@@ -29,7 +29,7 @@ class _SecondPageState extends State<SecondPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Center(
-                        child: Container(
+                        child: SizedBox(
                           // color: preto,
                           width: 430,
                           child: Image.asset('assets/leitores.png'),
@@ -47,9 +47,9 @@ class _SecondPageState extends State<SecondPage> {
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 20, left: 37),
-                        child: Container(
+                      const Padding(
+                        padding: EdgeInsets.only(top: 20, left: 37),
+                        child: SizedBox(
                           width: 280,
                           child: Text(
                             'Have you found your book yet?',
@@ -66,24 +66,22 @@ class _SecondPageState extends State<SecondPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Container(
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.more_horiz,
-                                    color: quaseAzulClaro,
-                                    size: 40,
+                            Row(
+                              children: [
+                                const Icon(
+                                  Icons.more_horiz,
+                                  color: quaseAzulClaro,
+                                  size: 40,
+                                ),
+                                Container(
+                                  height: 10,
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: azul,
                                   ),
-                                  Container(
-                                    height: 10,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(30),
-                                      color: azul,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                             Container(
                               height: 80,
@@ -96,11 +94,11 @@ class _SecondPageState extends State<SecondPage> {
                                 onTap: () {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => HomePage(),
+                                      builder: (context) => const HomePage(),
                                     ),
                                   );
                                 },
-                                child: Icon(
+                                child: const Icon(
                                   Icons.chevron_right,
                                   color: branco,
                                   size: 50,
