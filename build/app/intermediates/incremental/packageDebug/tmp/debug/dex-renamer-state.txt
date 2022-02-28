@@ -1,0 +1,4 @@
+#Mon Feb 28 18:08:35 BRT 2022
+base.0=/home/alexandre/Área de Trabalho/Avaliacao 2 P4/The-Book-Avalia-o-Programa-o-4-/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
